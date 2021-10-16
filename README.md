@@ -18,7 +18,7 @@ The requirements of the scheduler are -
 6. EMPTY LINE: Let the scheduler execute a single JOB.
 ## Implementation
 
-Following data structures are implemented as part of this project to build the scheduler:
+Following data structures(coded from scratch) are implemented as part of this project to build the scheduler:
 
 <!--Red-Black Tree: The key of the red-black tree is name_job . Since name_job is unique, it will take O(log n) time to search a job. Red-Black tree ensures that it will remain balanced so there is a performance improvement as compared to using plane Binary Search Tree. The node maintains a list of Jobs corresponding t.-->
 Max Heap using Priority Queue: The key of Max Heap is assigned as priority of the job. So, whenever extractMax() is called, it will correspond to highest priority job among all jobs. Running Time of job is checked. It will then fetch the project from the RB-Tree and check its budget, say B.
